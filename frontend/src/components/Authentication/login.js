@@ -1,10 +1,10 @@
 import React , { useState, userContext, useContext } from "react";
 import axios from "axios";
 import {useNavigate} from 'react-router-dom'
-import Example  from "./Example";
+import Example  from "../../Navbar/Example";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
-import Context from '../Context/userContext';
+import Context from '../../Context/userContext';
 
 function Login(props) {
     const [context, setContext] = useContext(Context);

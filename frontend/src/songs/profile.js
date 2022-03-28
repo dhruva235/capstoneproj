@@ -1,7 +1,7 @@
 import React,{useState,useContext} from 'react';
 import "../App.css"
 import { useHistory } from "react-router-dom";
-import Example from "../components/Example";
+import Example from "../Navbar/Example";
 import {useNavigate} from 'react-router-dom';
 import axios from 'axios'
 import Context from '../Context/userContext';

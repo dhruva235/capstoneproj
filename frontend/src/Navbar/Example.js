@@ -47,6 +47,9 @@ import {
                 <NavLink onClick={()=>history("/login")} ><h6>Songs Management</h6></NavLink>
               </NavItem>
               <NavItem>
+                <NavLink onClick={()=>history("/songs")} ><h6>Songs</h6></NavLink>
+              </NavItem>
+              <NavItem>
                 <NavLink onClick={()=>history("/playlist")} ><h6>Playlist</h6></NavLink>
               </NavItem>
               <NavItem>
@@ -63,7 +66,9 @@ import {
                 <NavLink onClick={()=>history("/login")} ><h6>Logout</h6></NavLink>
               </NavItem>
 
-
+              <NavItem>
+                <NavLink onClick={()=>history("/search")}><h6>Search Songs</h6></NavLink>
+              </NavItem>
             </Nav>
         
         </Navbar>

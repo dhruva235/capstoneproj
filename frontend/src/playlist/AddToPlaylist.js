@@ -30,9 +30,9 @@ const AddToPlaylist=({selectedSong})=>{
    return (
        <>
       { playlists.map((playlist,index)=>(
-        <Card key={index} onClick={()=>handleClick(playlist,selectedSong)}>
+        <Card key={index} onClick={()=>handleClick(playlist,selectedSong)} body inverse color="primary">
         <CardBody>
-          <CardText>{playlist.title}</CardText>
+          <CardText><strong><h3>{playlist.title}</h3></strong></CardText>
         </CardBody>
       </Card>
        ))}

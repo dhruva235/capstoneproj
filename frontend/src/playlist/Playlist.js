@@ -1,7 +1,7 @@
 import {useEffect,useState} from 'react';
 import axios from 'axios';
 import {Card,CardText,CardBody,CardTitle,Button} from 'reactstrap';
-import Cart from './updated/cart';
+import Cart from '../components/APIFETCH/cart';
 const Playlist=({setSelectedPlaylist})=>{
   const [playlists,setPlaylists]=useState([]);
   const [title,setTitle]=useState([]);
@@ -43,19 +43,35 @@ const Playlist=({setSelectedPlaylist})=>{
 
   return(
     <>
-    <div className="playlist">
+    
+      <div>
+      <div className="myClass" style={{float : 'left', width : '20%'}}
+      >
     New playlist:
     <input type="text" onChange={handleChange }/>
+
+    
+    
     <button onClick={handleOnclick}>Add New Playlist</button>
+    </div>
+
+    <div className="myClass" style={{float : 'right', width : '50%'}}>
     {playlists.length>=1?playlists.map((playlist,index)=>
-      <Card key={index} onClick={()=>handlePlaylistUpdate(playlist)} >
+    
+      <Card key={index} onClick={()=>handlePlaylistUpdate(playlist)}  inverse color="warning"  className="text-center">
+        
         <CardBody>
-          <CardText>{playlist.title}</CardText>
+        
+          <CardText><strong>{playlist.title}</strong></CardText>
+          
       <Button onClick={()=>handleDeletePlaylist(playlist.id)}>Delete</Button>
         </CardBody>
       </Card>):null}
       </div>
-      </>
+      
+    </div>
+    </>
+     
      
       )
     

@@ -4,11 +4,11 @@ import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from "react
 import axios from 'axios';
 import { Card, CardFooter, CardHeader, Container, Button, CardTitle, CardBody, FormGroup, CardText, Row, Col } from 'reactstrap';
 import Cart from "./cart"
-import Example from "../../components/Example"
+import Example from "../../Navbar/Example"
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
-import AddToPlaylist from '../AddToPlaylist';
+import AddToPlaylist from '../../playlist/AddToPlaylist';
 export default function Read() {
   const [apiData, setApiData] = useState([]);
   const navigate = useNavigate();
@@ -83,11 +83,7 @@ export default function Read() {
   return (
     <>
       <Example />
-      <div class="about-section">
-        <h1>THIS IS THE SONG PAGE</h1>
-        <p>This is the application is to add the songs.</p>
-        <p>Please <b>login</b> if u have a account or<b> register </b>  to use the playlist of this app.</p>
-      </div>
+      
 
       <Container fluid>
 
@@ -95,21 +91,21 @@ export default function Read() {
           <Col md="8" className={selectedSong?'container-blur':null}>
             {apiData.map((data, index) => {
               return (
-                <Card key={index} inverse style={{ backgroundColor: '#333', borderColor: '#333' }} className="mt-2 mb-4">
+                <Card key={index} Card body inverse color="success" className="mt-2 mb-4">
                   <CardBody className="text-center">
 
 
-                    <CardTitle ><strong>Movie Name:{data.firstName}</strong></CardTitle>
-                    <CardText>Song Name:{data.lastName}</CardText>
-                    <CardText>Songlength:{data.Songlength}</CardText>
-                    <CardText>Singer:{data.Singer}</CardText>
+                    <CardTitle ><strong>Movie Name: <h3>{data.firstName} </h3></strong></CardTitle>
+                    <CardText>  Song Name111: <h3>{data.lastName}</h3></CardText>
+                    <CardText>Songlength: <h3>{data.Songlength}</h3></CardText>
+                    <CardText>  Singer:  <h3>  {data.Singer}</h3></CardText>
                     <Link to={`/update/${data.id}`}>
 
                       <ToastContainer />
-                      <Button color="success" onClick={() => setID(data.id)} size="sm">update</Button>{' '}
+                      <Button color="info" onClick={() => setID(data.id)} size="sm">Update</Button>{' '}
                     </Link>
-                    <Button color="danger" onClick={() => onDelete(data.id)} size="sm">delete</Button>{' '}
-                    <Button color="success" size="sm" onClick={() => selectedSongHandler(data)}>addto</Button>{' '}
+                    <Button color="danger" onClick={() => onDelete(data.id)} size="sm">Delete</Button>{' '}
+                    <Button color="warning" size="sm" onClick={() => selectedSongHandler(data)}>AddToPlaylist</Button>{' '}
                   </CardBody>
 
                 </Card>
@@ -119,7 +115,7 @@ export default function Read() {
           </Col>
 
           <Col >
-
+<h2>PLaylists</h2>
             <AddToPlaylist selectedSong={selectedSong} />
 
           </Col>

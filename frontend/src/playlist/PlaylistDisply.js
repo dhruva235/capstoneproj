@@ -3,7 +3,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { BrowserRouter as Router, Routes, Route,Link } from "react-router-dom";
 import axios from 'axios';
 import { Card,CardFooter,CardHeader, Container,Button, CardTitle,CardBody, FormGroup, CardText, Row, Col } from 'reactstrap';
-import Cart from "./updated/cart"
+import Cart from "../components/APIFETCH/cart"
 import Playlist from './Playlist';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-toastify/dist/ReactToastify.css";
@@ -11,7 +11,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-toastify/dist/ReactToastify.css";
 import "../App.css";
-import Example  from "../components/Example";
+import Example  from "../Navbar/Example";
 
 
 function Main() {
@@ -84,21 +84,18 @@ function Main() {
     <>
     <Example/>
   <h1>only paylist page</h1>
-  <div class="about-section">
-  <h1>THIS IS THE SONG PAGE</h1>
-  <p>This is the application is to add the songs.</p>
-  <p>Please <b>login</b> if u have a account or<b> register </b>  to use the playlist of this app.</p>
-</div>
+  
 
 <Container fluid>
-  <div>
-  
+  <Row>
+  <Col md="17">
       <Playlist setSelectedPlaylist={setSelectedPlaylist}/>
-      </div>
-      <div>
-      <Cart cartData={cartData} selectedPlaylist={selectedPlaylist}/>
-      </div>
-      {/* <FormGroup>
+  </Col>
+
+  <Col md="17">
+      <Cart cartData={cartData}/>
+      
+      {<FormGroup>
       {cartData.length >= 1 ? (
         <Card className="text-center mt-3">
           <CardHeader>Total songs are</CardHeader>
@@ -117,7 +114,9 @@ function Main() {
         <h1 className="text-warning">Your Playlist is empty</h1>
       )}
      
-     </FormGroup> */}
+     </FormGroup> }
+     </Col>
+     </Row>
       </Container>      
   </>
   )

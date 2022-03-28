@@ -2,7 +2,7 @@ import React,{useState,useContext} from 'react';
 import Context from '../Context/userContext';
 import "../App.css"
 import { useHistory } from "react-router-dom";
-import Example from "../components/Example";
+import Example from "../Navbar/Example";
 import {useNavigate} from 'react-router-dom';
 import axios from 'axios'
 const About = (props) =>{ 
@@ -30,7 +30,7 @@ const About = (props) =>{
      <h3>The username is:   <b>{context.name}</b></h3>
   <h1>About This App</h1>
   <p>This is the application is to add the songs.</p>
-  <p>Please login or register the to use the playlist sevice of this app.
+  <p>Please login or register the to do Song management of this app.
     if u want only songs the click on songs menu
   </p>
 </div>

@@ -133,6 +133,43 @@ body{
   font-size: 1rem;
 }
 
+.myClass >input {
+  border-radius: 8px;
+  border: 2px solid #dddfe2;
+  outline: none;
+  color: #1d2129;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.75rem;
+  width: 92%;
+  font-size: 1rem;
+}
+.center >input{
+  border-radius: 8px;
+  border: 2px solid #dddfe2;
+  outline: none;
+  color: #1d2129;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.75rem;
+  width: 92%;
+  font-size: 1rem;
+}
+.myClass > button {
+  background: #1877f2;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  transition-duration: 0.4s
+
+}
+
+
+
 .register > .button {
   background: #1877f2;
   background-color: #4CAF50; /* Green */
@@ -154,6 +191,9 @@ body {
 
 h2{
   color:#E07C24
+}
+h2{
+  color:red
 }
 
 
@@ -193,4 +233,30 @@ a{
 
 .container-blur{
   opacity: 0.5;
+}
+h1{
+  color: blue
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+ 
+  text-align: center;
+  
+}
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+.p{
+  color: #E21717
+
 }
