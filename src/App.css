@@ -1,0 +1,196 @@
+body{
+  background:wheat;
+}
+
+.App {
+
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background:wheat;
+  font-family: Arial, sans-serif;
+}
+
+.homepage {
+  width: 400px;
+  background:whitesmoke;
+  border: 1px solid #828283;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-right: 10px;
+  align-items: center;
+  text-align: center;
+  position: center;
+  margin: auto;
+  margin-top: 20px;
+  width: 50%;
+  
+  padding: 50px;
+}
+
+.homepage > .button {
+  background: #1877f2;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  transition-duration: 0.4s
+}
+.homepagebtn1{
+  background: #1877f2;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  transition-duration: 0.4s
+
+}
+
+
+.login {
+  width: 400px;
+  background:wheat;
+  border: 1px solid #dddfe2;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-right: 10px;
+  align-items: center;
+  text-align: center;
+  position: center;
+  margin: auto;
+  margin-top: 50px;
+  width: 50%;
+  
+  padding: 50px;
+}
+
+.login > input {
+  border-radius: 8px;
+  border: 2px solid #dddfe2;
+  outline: none;
+  color: #1d2129;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.75rem;
+  width: 92%;
+  font-size: 1rem;
+}
+
+.login > .button {
+  background: #1877f2;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  transition-duration: 0.4s
+}
+.login > .button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+.register {
+  width: 400px;
+  background:wheat;
+  border: 1px solid #dddfe2;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-right: 10px;
+  align-items: center;
+  text-align: center;
+  position: center;
+  margin: auto;
+  margin-top: 50px;
+  width: 50%;
+  
+  padding: 50px;
+}
+
+.register > input {
+  border-radius: 8px;
+  border: 2px solid #dddfe2;
+  outline: none;
+  color: #1d2129;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.75rem;
+  width: 92%;
+  font-size: 1rem;
+}
+
+.register > .button {
+  background: #1877f2;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  transition-duration: 0.4s
+}
+
+
+body {
+  background-color:wheat
+}
+
+h2{
+  color:#E07C24
+}
+
+
+h4{
+  color:blueviolet
+  
+}
+h5{
+  color: #22CB5C;
+}
+
+h6{
+  color:red
+}
+.mt{
+  color:#E03B8B
+}
+.si{
+  color:#4DD637
+}
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+b{
+  color:red
+}
+
+a{
+  color: blue;
+}
+#GFG{
+  text-decoration: none
+}
+
+.container-blur{
+  opacity: 0.5;
+}
